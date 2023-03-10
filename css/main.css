@@ -1,16 +1,204 @@
 /***** Google Fonts *****/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
   width: 100%;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.header-h1 {
+  text-align: center;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 12px;
+}
+.header-logo {
+  margin: auto;
+  height: 30px;
+}
+
+#Explorer {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(247, 247, 247);
+  padding-bottom: 40px;
+}
+
+.explorer-position {
+  background-color: rgb(236, 236, 236);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 18px 0;
+  box-shadow: inset 0 6px 6px -6px rgb(211, 211, 211);
+}
+.explorer-position-icon {
+  color: rgb(87, 87, 87);
+  padding-right: 150px;
+}
+.explorer-position-text {
+  color: rgb(87, 87, 87);
+  font-weight: bold;
+  position: absolute;
+}
+.explorer-title {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(247, 247, 247);
+}
+.explorer-title-header {
+  width: 60%;
+  margin: auto;
+  padding: 40px 0 5px;
+  font-size: 24px;
+  font-weight: 900;
+}
+.explorer-title-subtitle {
+  width: 80%;
+  min-width: 70%;
+  margin: auto;
+  padding: 10px 0 20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.explorer-btn {
+  text-decoration: none;
+  margin: auto;
+  padding: 14px 20px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px 2px rgba(186, 186, 186, 0.432);
+  background: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
+}
+.explorer-btn:hover {
+  background: #ae80e5;
+  box-shadow: 0 0 15px 7px rgba(153, 153, 153, 0.246);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.working-header {
+  padding: 40px 15px;
+}
+.working-ol {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.working-li {
+  display: flex;
+  flex-direction: column;
+}
+.working-link {
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(0deg, 0%, 96%);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px auto 10px 20px;
+  width: 80%;
+  height: 32px;
+  box-shadow: 0 5px 5px 2px rgba(186, 186, 186, 0.432);
+}
+.working-card-number {
+  color: white;
+  font-size: 14px;
+  background-color: #9356DC;
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  translate: -30px 5px;
+}
+.working-card-icon {
+  width: 10px;
+  font-size: 18px;
+  color: #747474;
+  translate: -10px 9px;
+}
+.working-card-title {
+  font-weight: bold;
+  translate: 15px 9px;
+}
+
+#Restaurants {
+  background-color: hsl(0deg, 0%, 96%);
+}
+
+.restaurants-header {
+  padding: 50px 0 0 20px;
+}
+.restaurants-li {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 90%;
+  padding-top: 20px;
+}
+.restaurants-link {
+  box-shadow: 0 5px 5px 2px rgba(186, 186, 186, 0.432);
+}
+.restaurants-card-img {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurants-card-bottom {
+  padding: 12px;
+  background-color: white;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.restaurants-card-header {
+  padding: 0 5px 5px;
+}
+.restaurants-card-subtitle {
+  padding: 0 5px 5px;
+}
+.restaurants-card-badge {
+  float: right;
+  margin-top: -240px;
+  vertical-align: top;
+  background-color: #99E2D0;
+  color: #278870;
+  font-size: 14px;
+  padding: 5px 3px 5px 14px;
+  width: 65px;
+  border-radius: 2px;
+  font-weight: 600;
+  z-index: 999999;
+}
+.restaurants-card-icon {
+  float: right;
 }
 
 footer {

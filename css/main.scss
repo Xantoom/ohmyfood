@@ -1,19 +1,33 @@
 /***** Google Fonts *****/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 
+@import "components/_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
   width: 100%;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 @import 'header.scss';
-
+@import 'explorer.scss';
+@import "working.scss";
+@import 'restaurants.scss';
 @import 'footer.scss';

@@ -1,0 +1,13 @@
+.header {
+  &-h1 {
+    text-align: center;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 12px;
+  }
+
+  &-logo {
+    margin: auto;
+    height: 30px;
+  }
+}
