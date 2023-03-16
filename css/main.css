@@ -1,5 +1,12 @@
 /***** Google Fonts *****/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+html, body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,20 +14,11 @@
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-html, body {
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
-  max-width: 100%;
 }
 
 .header-h1 {
@@ -101,7 +99,7 @@ html, body {
 }
 
 .working-header {
-  padding: 40px 15px;
+  padding: 20px 15px;
 }
 .working-ol {
   display: flex;
@@ -123,6 +121,9 @@ html, body {
   height: 32px;
   box-shadow: 0 5px 5px 2px rgba(186, 186, 186, 0.432);
 }
+.working-link-active {
+  background-color: #f5edff;
+}
 .working-card-number {
   color: white;
   font-size: 14px;
@@ -142,6 +143,9 @@ html, body {
   color: #747474;
   translate: -10px 9px;
 }
+.working-card-icon-active {
+  color: #9356DC;
+}
 .working-card-title {
   font-weight: bold;
   translate: 15px 9px;
@@ -149,10 +153,11 @@ html, body {
 
 #Restaurants {
   background-color: hsl(0deg, 0%, 96%);
+  margin-bottom: 50px;
 }
 
 .restaurants-header {
-  padding: 50px 0 0 20px;
+  padding: 20px 0 0 20px;
 }
 .restaurants-li {
   margin: auto;
@@ -164,19 +169,22 @@ html, body {
 }
 .restaurants-link {
   box-shadow: 0 5px 5px 2px rgba(186, 186, 186, 0.432);
+  border-radius: 30px;
 }
 .restaurants-card-img {
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
   height: 200px;
   width: 100%;
   object-fit: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 .restaurants-card-bottom {
   padding: 12px;
   background-color: white;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  height: 50px;
+  position: relative;
 }
 .restaurants-card-header {
   padding: 0 5px 5px;
@@ -195,10 +203,14 @@ html, body {
   width: 65px;
   border-radius: 2px;
   font-weight: 600;
-  z-index: 999999;
+  position: absolute;
+  right: 5%;
 }
 .restaurants-card-icon {
   float: right;
+  margin-top: -40px;
+  margin-right: 10px;
+  font-size: 25px;
 }
 
 footer {

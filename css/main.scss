@@ -3,6 +3,13 @@
 
 @import "components/_variables.scss";
 
+html, body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,20 +17,11 @@
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-html, body {
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
-  max-width: 100%;
 }
 
 @import 'header.scss';
