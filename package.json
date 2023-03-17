@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "compile": "sass css/main.scss css/main.css --watch"
+    "compile": "sass css/main.scss css/main.css --watch && sass css/menu.scss css/menu.css --watch"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
