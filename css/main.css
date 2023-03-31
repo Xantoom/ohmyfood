@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 html, body {
   width: 100%;
+  max-width: 100%;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
-  max-width: 100%;
 }
 
 * {
@@ -19,6 +19,10 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.container {
+  margin-inline: 5%;
 }
 
 .header-h1 {
@@ -99,7 +103,8 @@ a {
 }
 
 .working-header {
-  padding: 20px 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .working-ol {
   display: flex;
@@ -153,18 +158,17 @@ a {
 
 #Restaurants {
   background-color: hsl(0deg, 0%, 96%);
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .restaurants-header {
-  padding: 20px 0 0 20px;
+  padding-top: 20px;
 }
 .restaurants-li {
   margin: auto;
   display: flex;
   flex-direction: column;
   border-radius: 30px;
-  width: 90%;
   padding-top: 20px;
 }
 .restaurants-link {
@@ -245,6 +249,73 @@ footer h2 {
 .footer-icon {
   margin-right: 5px;
   width: 20px;
+}
+
+.loader {
+  width: 100%;
+  height: 190%;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  display: block;
+  overflow: hidden;
+  animation: fadeBlock;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  padding-top: 20%;
+}
+.loader-icon {
+  color: #9356DC;
+  font-size: 8em;
+  animation: loaderRotation forwards;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+}
+@keyframes loaderRotation {
+  0% {
+    opacity: 0;
+    transform: translate(0px) rotate(200deg);
+  }
+  30% {
+    opacity: 80%;
+    transform: translate(0px, 0px) rotate(500deg);
+  }
+  50% {
+    transform: translate(0px, -400px) rotate(700deg);
+    opacity: 1%;
+    color: #ff46cc;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(900deg) translate(0, -400px);
+  }
+}
+@keyframes fadeBlock {
+  0% {
+    opacity: 100%;
+  }
+  8% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    margin-top: 100vh;
+    width: 100%;
+    height: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

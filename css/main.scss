@@ -5,9 +5,9 @@
 
 html, body {
   width: 100%;
+  max-width: 100%;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
-  max-width: 100%;
 }
 
 * {
@@ -24,10 +24,15 @@ a {
   color: inherit;
 }
 
-@import 'header.scss';
+.container {
+  margin-inline: 5%;
+}
 
+@import 'header.scss';
 @import 'explorer.scss';
 @import "working.scss";
 @import 'restaurants.scss';
-
 @import 'footer.scss';
+
+@import 'components/_loader.scss';
+@import "components/_heart.scss";

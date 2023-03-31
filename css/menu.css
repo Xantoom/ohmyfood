@@ -1,0 +1,118 @@
+body {
+  background-color: rgb(236, 236, 236);
+}
+
+header {
+  background-color: white;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header a {
+  display: flex;
+  align-items: center;
+}
+header a i {
+  font-size: 20px;
+  margin-left: calc(10px - 100%);
+}
+
+#menu {
+  border-radius: 30px;
+  transform: translate(0, -36px);
+  background-color: rgb(236, 236, 236);
+}
+
+.menu-img {
+  width: 100%;
+  object-fit: cover;
+}
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.menu-header-text {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+}
+.menu-header-icon {
+  font-weight: 100;
+  padding-right: 15px;
+}
+.menu-header-icon:hover {
+  cursor: pointer;
+}
+.menu-title-text {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.menu-title-line {
+  height: 2px;
+  width: 42px;
+  color: #99E2D0;
+  background: #99E2D0;
+  border: none;
+}
+.menu-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.menu-li {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0deg, 0%, 96%);
+  border-radius: 20px;
+  padding: 20px;
+  height: 32px;
+  box-shadow: 0 5px 5px 2px rgba(186, 186, 186, 0.432);
+}
+.menu-li-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-li-subtitle-text {
+  font-size: 13px;
+  font-weight: 300;
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu-li-subtitle-price {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.btn {
+  text-decoration: none;
+  margin: auto;
+  padding: 14px 50px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px 2px rgba(186, 186, 186, 0.432);
+  background: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
+}
+.btn:hover {
+  background: #ae80e5;
+  box-shadow: 0 0 15px 7px rgba(153, 153, 153, 0.246);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/*# sourceMappingURL=menu.css.map */
