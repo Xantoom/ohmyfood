@@ -1,0 +1,22 @@
+.empty-heart {
+  color: transparent;
+  background: $color-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background: $color-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.filled-heart {
+  color: $color-gradient;
+  transition: all 0.5s ease;
+
+    &:hover {
+      color: transparent;
+    }
+}

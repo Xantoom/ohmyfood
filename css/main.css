@@ -22,7 +22,9 @@ a {
 }
 
 .container {
-  margin-inline: 5%;
+  margin-inline: auto;
+  max-width: 800px;
+  padding-inline: 5%;
 }
 
 .header-h1 {
@@ -316,6 +318,27 @@ footer h2 {
     width: 100%;
     height: 0;
   }
+}
+
+.empty-heart {
+  color: transparent;
+  background: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease;
+}
+.empty-heart:hover {
+  background: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.filled-heart {
+  color: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
+  transition: all 0.5s ease;
+}
+.filled-heart:hover {
+  color: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */

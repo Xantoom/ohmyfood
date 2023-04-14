@@ -25,7 +25,9 @@ a {
 }
 
 .container {
-  margin-inline: 5%;
+  margin-inline: auto;
+  max-width: 800px;
+  padding-inline: 5%;
 }
 
 @import 'header.scss';
