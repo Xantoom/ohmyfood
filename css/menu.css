@@ -43,7 +43,6 @@ header a i {
   font-size: 24px;
 }
 .menu-header-icon {
-  font-weight: 100;
   padding-right: 15px;
   position: absolute;
   right: 15px;
@@ -84,6 +83,11 @@ header a i {
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
 }
+.menu-li-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu-li-subtitle {
   display: flex;
   justify-content: space-between;
@@ -94,6 +98,7 @@ header a i {
   font-weight: 300;
   width: 80%;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu-li-subtitle-price {
