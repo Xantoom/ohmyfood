@@ -71,7 +71,7 @@ header a i {
 }
 .menu-li {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   background-color: hsl(0deg, 0%, 96%);
   border-radius: 20px;
   padding: 20px;
@@ -85,8 +85,6 @@ header a i {
 }
 .menu-li-title {
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu-li-subtitle {
   display: flex;

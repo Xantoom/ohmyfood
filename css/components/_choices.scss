@@ -1,0 +1,56 @@
+.menu-li {
+  overflow: hidden;
+
+  &-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    transition: width 0.5s ease-in-out;
+  }
+
+  &:hover {
+    .menu-li-card {
+      width: calc(100% - 75px);
+      transition: width 0.5s ease-in-out;
+    }
+
+    .menu-li-validation {
+      visibility: visible;
+      transform: translateX(0); /* la div revient à sa position initiale */
+
+      &-icon {
+        animation: rotate 0.75s ease;
+      }
+
+      @keyframes rotate {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+      }
+    }
+  }
+
+  &-validation {
+    background-color: $color-tertiary;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    visibility: hidden;
+    transform: translateX(100%); /* la div est déplacée vers la droite */
+    transition: visibility 0.5s ease-in-out, transform 0.5s ease-in-out; /* transition de 0.5s pour l'opacité et le déplacement */
+
+    &-icon {
+      color: $background-primary;
+      font-size: 25px;
+      padding: 25px;
+      animation: inverse-rotate 0.75s ease;
+    }
+    
+    @keyframes inverse-rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  }
+}

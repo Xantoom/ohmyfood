@@ -88,7 +88,7 @@ header {
 
   &-li {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     background-color: $background-quaternary;
     border-radius: 20px;
     padding: 20px;
@@ -103,8 +103,6 @@ header {
 
     &-title {
       white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
 
     &-subtitle {
