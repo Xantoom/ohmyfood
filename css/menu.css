@@ -88,6 +88,9 @@ header a i {
 .menu-li:nth-child(3) {
   animation: fade-in 2s 0.8s forwards ease-out;
 }
+.menu-li:nth-child(4) {
+  animation: fade-in 2s 0.9s forwards ease-out;
+}
 .menu-li-title {
   white-space: nowrap;
   overflow: clip;
