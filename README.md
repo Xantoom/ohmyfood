@@ -5,6 +5,8 @@
 
 > Ohmyfood est un projet de formation de la formation Développeur Web d'OpenClassrooms. Il s'agit d'une application de réservation de restaurants en ligne.
 
+Étape du projet : Soutenance validée
+
 ## Prérequis
 
 - [NPM](https://www.npmjs.com/) (v6.4.1)
